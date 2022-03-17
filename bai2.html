@@ -5,16 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+<h1 id="rs"></h1>
 <script>
   let num=[1,2,3,5,6,10,12,40,16];
   let index ='';
+  let result = document.getElementById("rs")
   function timsonguyen(){
       for (let i=0;i<num.length;i++) {
           if (so == num[i]) {
               index = i;
 
-              document.write("có tồn tại số nguyên: "+" "+so+" "+ "ở vị trí: "+index)
-          }
+              result.innerHTML = "có tồn tại số nguyên: "+" "+so+" "+ "ở vị trí: "+index
+              break
+          }else result.innerHTML = "không tồn tại"
       }
   }
 
